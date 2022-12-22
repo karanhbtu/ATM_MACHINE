@@ -37,9 +37,10 @@ public:
     void withdrawl()
     {
         int a;
-        cout << "Enter amount to withdraw"<<endl;
+        cout << "Enter amount to withdrawl"<<endl;
         cin >> a;
-        tot -= a;
+        if(a>tot) cout<<"Withdrawl is not possible"endl;
+        else tot -= a;
     }
 };
 int main()
@@ -52,7 +53,7 @@ int main()
              << "number, Account type"<<endl;
         cout << "\t2. Balance Enquiry"<<endl;
         cout << "\t3. depositmoney Money"<<endl;
-        cout << "\t4. Withdraw Money"<<endl;
+        cout << "\t4. Withdrawl Money"<<endl;
         cout << "\t5. Exit"<<endl;
         cin >> choice;
         switch (choice) {
