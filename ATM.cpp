@@ -39,7 +39,7 @@ public:
         int a;
         cout << "Enter amount to withdrawl"<<endl;
         cin >> a;
-        if(a>tot) cout<<"Withdrawl is not possible"endl;
+        if(a>tot) cout<<"Withdrawl is not possible"<<endl;
         else tot -= a;
     }
 };
